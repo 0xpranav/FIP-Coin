@@ -7,15 +7,16 @@ function Balance() {
   const[inputValue, setInput] = useState("");
   const[balanceResult, setBalance] = useState("");
   const[cryptoSymbol, setSymbol] = useState("");
-  const[isHidden, setHidden] = useState(false);
+  const[isHidden, setHidden] = useState(true);
   
   async function handleClick() {
     //console.log("Balance Button Clicked");
     const principal = Principal.fromText(inputValue);
     const balance = await token.balanceOf(principal);
     setBalance(balance.toLocaleString());
-    setSymbol(await token.getSybmol());
     setHidden(false);
+    setSymbol(await token.getSymbol());
+    
   }
 
 

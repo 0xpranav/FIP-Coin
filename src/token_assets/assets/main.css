@@ -1,3 +1,7 @@
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
 html {
     background: #a5a4ce;
     font-family: System, monospace;
@@ -179,4 +183,37 @@ html {
     display: table;
     margin: auto;
   }
+
+  .footer-basic {
+    padding:0px 0;
+    background: #a5a4ce;
+    color:#4b4c4d;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:0px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    background: #a5a4ce;
+    align-content: center;
+    align-items: center;
+  }
+  
+  
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+    background: #a5a4ce;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    background: #a5a4ce;
+    margin-bottom:30px;
+  }
+  
+
   

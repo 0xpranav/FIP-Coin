@@ -7,7 +7,7 @@ actor Token{
     var owner: Principal = Principal.fromText("aqfow-fhhma-nsp2x-bngu5-caa3o-sehlj-m7ruv-5x7dm-xuxge-f3t7i-yqe");
     
     var totalSupply: Nat = 1000000000000;
-    var symbol: Text = "GARG";
+    var symbol: Text = "FIP";
 
     private stable var balanceEntries: [(Principal,  Nat)] = [];
 
@@ -18,7 +18,7 @@ actor Token{
    
 
     public query func getSymbol() : async Text{
-        return "GARG";
+        return symbol;
     };
 
     public query func balanceOf(who: Principal): async Nat{
